@@ -1,0 +1,43 @@
+<!DOCTYPE>
+<html lang="pl">
+<head>
+<script>
+function script()
+{
+
+var link= "https://rsdt-waw202-72.tvp.pl/token/video/vod/37386653/20180617/3163695878/91b36c56-e28a-46b7-ba03-d3df63090e8e/video.ism/video-audio=181000-video=6400000-";
+var link2=".ts";
+var count = 156;//364
+var procent;
+		//346
+	for (var i=1; i<=count; i++)
+	{
+		
+		do_something(i);
+		
+	}
+
+	function do_something(j) 
+	{	
+		procent =(j/count);
+	
+		//document.getElementById("aa").innerHTML =j/10+ "/"+count +procent*10+"%";
+		
+		
+		setTimeout(function(){window.open(link+j+link2);}, 6000 * j);
+	}
+	
+	
+	
+}
+</script>
+
+
+
+</head>
+<body onload="script()">
+	<div id="aa">tdt</div>
+</body>
+
+
+</html>
